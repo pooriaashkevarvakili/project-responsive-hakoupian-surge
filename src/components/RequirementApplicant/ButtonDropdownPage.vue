@@ -35,7 +35,11 @@
 import { ButtonDropdownPageCounter } from "stores/ButtonDropdownPageButtonDropdownPage";
 export default {
   setup() {
-    const ButtonDropdownPage=[
+   
+    // const store = ButtonDropdownPageCounter();
+    // store.GetButtonDropdownPage();
+
+ const ButtonDropdownPage=[
       {
       "id":0,
       "title":"علیرضاتهرانی",
@@ -57,8 +61,6 @@ export default {
       "img":"https://s22.picofile.com/file/8449412126/image6.png"
     }
     ]
-    // const store = ButtonDropdownPageCounter();
-    // store.GetButtonDropdownPage();
     return {
       // store,
     ButtonDropdownPage

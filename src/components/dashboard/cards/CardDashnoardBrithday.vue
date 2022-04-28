@@ -25,7 +25,7 @@
 import { birthdayCounter } from "stores/Birthday";
 export default {
   setup() {
-    const Birthday=[
+       const Birthday=[
          {
       "id":1,
       "title":"پوریاوکیلی",

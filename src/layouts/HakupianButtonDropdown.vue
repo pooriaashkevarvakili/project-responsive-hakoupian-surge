@@ -5,7 +5,7 @@
     color="primary"
     :label="$t('userPerson')"
   >
-    <div dir="rtl" class="col">
+    <div  class="col">
       <div class="flex justify-center items-center">
         <div class="q-mt-xs q-ml-xs">
           <img src="image1.jpg" style="width=20px;height:50px" />
@@ -25,7 +25,7 @@
       :icon="item.icon"
       size="6em"
       class="iran-sans text-blue-4"
-      dir="rtl"
+     
       :label="item.label"
     >
     </q-expansion-item>
@@ -62,16 +62,13 @@ export default {
     },
     {
       "id": 3,
-
       "label": "خدمات",
       "icon": "fa fa-gift"
     },
     {
       "id": 4,
-
       "label": "ارزیابی",
       "icon": "fa fa-arrow-trend-up"
-
     },
     {
       "id": 5,
@@ -95,7 +92,7 @@ export default {
     return { 
       q, 
     // store,
-    hakupianButtonDropdown,
+  hakupianButtonDropdown,
     gotoSignUp };
   },
 };

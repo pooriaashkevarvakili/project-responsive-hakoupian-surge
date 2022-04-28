@@ -22,7 +22,7 @@
               <div class="flex justify-around">
                 <div>
                   <div
-                    v-for="item in AddSettings"
+                    v-for="item in store.AddSettings"
                     :key="item.id"
                     class="col"
                   >
@@ -45,7 +45,7 @@
                 </div>
                 <div>
                   <div
-                    v-for="item in AddSettingsOne"
+                    v-for="item in storeOne.AddSettingsOne"
                     :key="item.id"
                     class="flex q-mt-lg q-ml-xl"
                   >
@@ -78,63 +78,18 @@ import { AddSettingsOneCounter } from "stores/AddSettingsOne";
 export default {
   setup() {
     const moreContent = ref(true);
-    const AddSettingsOne=[
-      {
-      "id": 1,
-      "title": "یادداشت",
-      "icon": "fa fa-file-lines"
-    },
-    {
-      "id": 2,
-      "title": "اعلان ها",
-      "icon": "fa fa-bell"
-
-    },
-    {
-      "id": 3,
-      "title": "پروژه ها",
-      "icon": "fas fa-list"
-    },
-    {
-      "id": 4,
-      "title": "ساعت",
-      "icon": "alarm"
-    }
-    ]
-      const AddSettings=[
-        {
-      "id": 1,
-      "title": "متولدین امروز",
-      "icon": "fa fa-birthday-cake"
-    },
-    {
-      "id": 2,
-      "title": "آخرین کارها",
-      "icon": "fa fa-bars"
-
-    },
-    {
-      "id": 3,
-      "title": "انتخاب غذا",
-      "icon": "fas fa-hamburger"
-    },
-    {
-      "id": 4,
-      "title": "مشخصات پرسنلی",
-      "icon": "fa fa-user"
-    }
-      ]
-    // const store = AddSettingsCounter();
-    // store.getAddSettings();
-    // const storeOne = AddSettingsOneCounter();
-    // storeOne.getAddSettingsOne();
+    
+    const store = AddSettingsCounter();
+    store.getAddSettings();
+    const storeOne = AddSettingsOneCounter();
+    storeOne.getAddSettingsOne();
     return {
       layout: ref(false),
-      // store,
-      AddSettings,
+      store,
+   
       moreContent,
-AddSettingsOne
-      // storeOne,
+
+      storeOne,
     };
   },
 };

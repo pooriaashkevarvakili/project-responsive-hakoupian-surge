@@ -17,15 +17,19 @@ const routes: RouteRecordRaw[] = [
         component: () => import("components/Desk/Desk.vue")
       },
     {
+      path:'/dryCleaning',
+      component: () => import("pages/DryCleaning.vue")
+    },
+  {
+    path:'/contentManagement',
+    component: () => import("pages/ContentManagement.vue")
+  },
+    {
       path:'/userManagement',
       component: () => import("pages/UserManagement.vue")
     },
    
-      { path: "/mailRoom", component: () => import("pages/Mailroom.vue") },
-      {
-        path: "/resumearshive",
-        component: () => import("pages/ResumeArshive.vue"),
-      },
+     
 
       {
         path: "/",

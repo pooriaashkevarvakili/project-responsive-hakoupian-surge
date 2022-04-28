@@ -34,7 +34,7 @@
 import { CardSectionModalCounter } from "stores/CardSectionModal";
 export default {
   setup() {
-    const CardSectionModal=[
+     const CardSectionModal=[
       {
       "id":1,
       "title":"پوریا وکیلی",

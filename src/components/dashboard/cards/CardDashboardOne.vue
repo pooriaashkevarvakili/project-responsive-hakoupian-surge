@@ -1,5 +1,5 @@
 <template>
-  <div dir="rtl" class="row q-col-gutter-sm q-py-sm">
+  <div  class="row q-col-gutter-sm q-py-sm">
     <CardDashboardTwo />
     <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12">
       <q-card>
@@ -50,7 +50,7 @@ export default {
    
     // const store = RecentworksCounter();
     // store.getRecentworks();
-       const Recentworks=[
+        const Recentworks=[
            {
       "id":1,
       "title":"دیزاین صفحه داشبوردهاکوپیان360",
@@ -83,7 +83,7 @@ export default {
        ]
     return {
       // store,
-    Recentworks
+   Recentworks
     };
   },
 };
