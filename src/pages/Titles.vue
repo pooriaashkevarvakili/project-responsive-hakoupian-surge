@@ -1,25 +1,19 @@
 <template>
-<q-card class='bg-green-4 text-white q-py-lg'>
-  <div  class="q-mr-lg q-mt-sm flex justify-center">
-    <span class="text-h6">{{ $t("Titles") }}</span>
-  </div>
+  <q-card class='bg-green-4 text-white q-py-lg'>
+    <div class="q-mr-lg q-mt-sm flex justify-center">
+      <span class="text-h6">{{ $t("Titles") }}</span>
+    </div>
   </q-card>
-  <div  class="flex q-mt-sm justify-between">
+  <div class="flex q-mt-sm justify-between">
     <div dir="rtl">
-      <q-input
-        class=" q-mr-lg"
-       filled
-        :label="$t('Search')"
-      >
+      <q-input class=" q-mr-lg" filled :label="$t('Search')">
         <template v-slot:prepend>
           <q-icon name="search" />
         </template>
       </q-input>
     </div>
     <div>
-      <q-btn class="bg-orange-4 text-white" icon="fa fa-plus"
-        >{{$t('CreateNewTitle')}}</q-btn
-      >
+      <q-btn class="bg-orange-4 text-white" icon="fa fa-plus">{{ $t('CreateNewTitle') }}</q-btn>
     </div>
   </div>
   <div class="q-pa-xl">
@@ -80,8 +74,8 @@
   </div>
 </template>
 
-<script>
-export default {};
+<script setup>
+
 </script>
 
 <style>
